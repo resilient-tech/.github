@@ -1,0 +1,59 @@
+name: Bug
+description: Something worked before, or should work, and doesn't.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Use test values only.** Never paste a real GSTIN, PAN, password, token, invoice or customer data here, in text, logs or screenshots. This issue may be public.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw. Include the full error message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a Sales Invoice for a company with ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: From the About dialog, or `bench version`.
+      placeholder: |
+        Frappe:
+        ERPNext:
+        This app:
+    validations:
+      required: true
+
+  - type: input
+    id: last-working
+    attributes:
+      label: Last version where it worked
+      description: Leave empty if you don't know.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error log or traceback
+      description: Remove any real GSTIN, PAN or token first.
+      render: shell

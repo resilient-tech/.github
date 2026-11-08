@@ -1,0 +1,35 @@
+name: Feature
+description: Something new, or a better way to do something.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start with the problem. A clear problem gets built sooner than a detailed solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: Who runs into it, and what they do today.
+      placeholder: Every month our accountant exports ... and fixes ... by hand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: Your idea, if you have one.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround today
+      description: How you get by without it, and what else you tried.
+
+  - type: input
+    id: how-often
+    attributes:
+      label: How often it comes up
+      placeholder: Every invoice, once a month at filing, once a year ...
