@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Use test values only.** Never paste a real GSTIN, PAN, password, token, invoice or customer data here, in text, logs or screenshots. This issue may be public.
+        **Paste with care: this issue may be public.** Share a GSTIN, invoice number or other detail only when it's already public and needed to reproduce the problem. Never paste passwords, API keys, tokens or OTPs, and check logs and screenshots before you attach them.
 
   - type: textarea
     id: what-happened
@@ -20,7 +20,7 @@ body:
     attributes:
       label: Steps to reproduce
       placeholder: |
-        1. Open a Sales Invoice for a company with ...
+        1. Go to ...
         2. Click ...
         3. See ...
     validations:
@@ -37,11 +37,11 @@ body:
     id: versions
     attributes:
       label: Versions
-      description: From the About dialog, or `bench version`.
+      description: The app's version. For a Frappe app, also Frappe and ERPNext, from the About dialog or `bench version`.
       placeholder: |
+        This app:
         Frappe:
         ERPNext:
-        This app:
     validations:
       required: true
 
@@ -55,5 +55,5 @@ body:
     id: logs
     attributes:
       label: Error log or traceback
-      description: Remove any real GSTIN, PAN or token first.
+      description: Take out passwords, tokens and private data first.
       render: shell
