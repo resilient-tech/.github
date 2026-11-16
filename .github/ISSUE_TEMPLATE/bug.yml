@@ -1,0 +1,58 @@
+name: Bug
+description: Something worked before, or should work, and doesn't.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue may be public.** Share real data only if it's already public and needed to reproduce. Never paste passwords or tokens.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw. Include the full error message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: The app's version. For a Frappe app, also Frappe and ERPNext, from the About dialog or `bench version`.
+      placeholder: |
+        This app:
+        Frappe:
+        ERPNext:
+    validations:
+      required: true
+
+  - type: input
+    id: last-working
+    attributes:
+      label: Last version where it worked
+      description: Leave empty if you don't know.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error log or traceback
+      render: shell
