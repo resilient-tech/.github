@@ -1,18 +1,18 @@
+<!-- Title: what changed, in Conventional Commits style (fix:, feat:, refactor:, ...), at most 72 characters. -->
+
 <!-- Line 1: what was broken or missing, as a user sees it. -->
 
-
 - <!-- What changed, as a user sees it. -->
-- <!-- How you checked it: the test or the steps you ran, or "not run". -->
+- <!-- How you checked it: the test or the steps you ran yourself, or "not run". -->
 
 Closes #
 
 <!--
 Add only what applies:
 - Before and after screenshot or short video, for anything people see
-- Docs link, for an India Compliance feature
-- Law: <provision>; Notfn <no>/<year>-CT dt DD.MM.YYYY, for a change the law requires
-- Breaking: what other apps or existing sites must do
+- Breaking: what other apps or sites must change
+- Backport: the version branches it should go to
 
-A reviewer should know in 20 seconds what changed and how to check it.
-No Problem / Root cause / Fix sections, no file lists, no steps you didn't run.
+One purpose, under 400 changed lines. A reviewer should know in 20 seconds what changed and how to check it.
+Leave out Problem / Root cause / Fix headings, file lists and steps you didn't run.
 -->
