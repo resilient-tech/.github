@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Paste with care: this issue may be public.** Share a GSTIN, invoice number or other detail only when it's already public and needed to reproduce the problem. Never paste passwords, API keys, tokens or OTPs, and check logs and screenshots before you attach them.
+        **This issue may be public.** Share real data only if it's already public and needed to reproduce. Never paste passwords or tokens.
 
   - type: textarea
     id: what-happened
@@ -55,5 +55,4 @@ body:
     id: logs
     attributes:
       label: Error log or traceback
-      description: Take out passwords, tokens and private data first.
       render: shell

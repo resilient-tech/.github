@@ -2,11 +2,6 @@ name: Feature
 description: Something new, or a better way to do something.
 type: Feature
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Start with the problem. A clear problem gets built sooner than a detailed solution.
-
   - type: textarea
     id: problem
     attributes:
